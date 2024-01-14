@@ -38,7 +38,7 @@ CREATE TABLE RENTAL (
      rental_id INT AUTO_INCREMENT  PRIMARY KEY,
      start_date DATE NOT NULL,
      end_date DATE NOT NULL,
-     daily_rate DECIMAL NOT NULL,
+     daily_rate DECIMAL (6,2) NOT NULL,
      car_id INT,
      customer_id INT,
      FOREIGN KEY (car_id) references CAR(car_id),
